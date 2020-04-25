@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title>DB Access POC</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h3>Spring JdbcTemplate</h3>
+<ul>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/createNewPatient}"/>Create New Patient</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/findPatientByName}"/>Find Patient By Name</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/updatePatient}"/>Update New Patient</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/deletePatient}"/>Delete Patient</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/findPatientById}"/>Find Patient By Patient ID</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/findPatientByVisitNumber}"/>Find Patient By Visit Number</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/findPatientByVisitNumberAndMRN}"/>Find Patient By Visit Number And MRN</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/findUserById}"/>Find User By ID</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/jdbctemplate/findAssignmentById}"/>Find Assignment By Id</a> <br/></li>
+</ul>
+
+<h3>Spring Data JPA</h3>
+<ul>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/createNewPatient}"/>Create New Patient</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findPatientByName}"/>Find Patient By Name</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/updatePatient}"/>Update New Patient</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/deletePatient}"/>Delete Patient</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findPatientById}"/>Find Patient By ID</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findPatientByVisitNumber}"/>Find Patient By Visit Number</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findPatientByVisitNumberAndMRN}"/>Find Patient By Visit Number And MRN</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findPatientCount}"/>Find Patient Count</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findAll}"/>Find All</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findUserById}"/>Find User By ID</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/findAssignmentByUserId}"/>Find Assignment By User ID</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajpa/throwException}"/>Throw Exception</a> <br/></li>
+</ul>
+
+<h3>Spring Data JDBC</h3>
+<ul>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/createNewPatient}"/>Create New Patient</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/findPatientByName}"/>Find Patient By Name</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/updatePatient}"/>Update New Patient</a> <br/></li>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/deletePatient}"/>Delete Patient</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/findPatientById}"/>Find Patient By Patient ID</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/findUserById}"/>Find User By User ID</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/findAssignmentById}"/>Find Assignment By Assignment ID</a> <br/></li>
+    <br/>
+    <li><a th:href="@{/dbaccesspoc/springdatajdbc/updateAssignment}"/>Update Assignment</a> <br/></li>
+</ul>
+
+
+</body>
+</html>

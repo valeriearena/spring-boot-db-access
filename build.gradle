@@ -1,0 +1,52 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+sourceCompatibility = 11
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	implementation 'com.microsoft.sqlserver:mssql-jdbc:7.4.0.jre11'
+
+	// 	Java JDBC driver that can log SQL and/or JDBC calls
+	// 	implementation 'com.integralblue:log4jdbc-spring-boot-starter:2.0.0'
+
+	//	implementation ('org.springframework.boot:spring-boot-starter-jdbc'){
+	//		exclude group: 'com.zaxxer', module: 'HikariCP'
+	//	}
+	//	implementation ('org.springframework.boot:spring-boot-starter-data-jdbc'){
+	//		exclude group: 'com.zaxxer', module: 'HikariCP'
+	//	}
+	//	implementation ('org.springframework.boot:spring-boot-starter-data-jpa'){
+	//		exclude group: 'com.zaxxer', module: 'HikariCP'
+	//	}
+
+	// 	Tomcat connection pool
+	// 	implementation 'org.apache.tomcat:tomcat-jdbc:9.0.2'
+
+	//	Autogenerate Java bytecode into your .class files using annotations.
+	compileOnly 'org.projectlombok:lombok:1.18.8'
+	annotationProcessor 'org.projectlombok:lombok:1.18.8'
+	implementation 'org.projectlombok:lombok:1.18.12'
+
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	testImplementation 'org.hsqldb:hsqldb'
+}
+
+test {
+	useJUnitPlatform()
+}
