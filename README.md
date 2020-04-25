@@ -1,4 +1,4 @@
-# spring-boot-dbaccess-poc
+# spring-boot-db-access
 Spring boot app that implements the following:
 * Spring MVC + Thymleaf UI
 * Spring JDBC
